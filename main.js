@@ -4,6 +4,10 @@ let gramOutput = document.getElementById('gramOutput');
 let poundOutput = document.getElementById('poundOutput');
 let ounceOutput = document.getElementById('ounceOutput');
 let output = document.getElementById('output')
+let nightToggle = document.getElementById('night');
+let body = document.querySelector('body');
+
+
 //Listening to events
 output.style.visibility= 'hidden';
 kgInput.addEventListener('input', event =>{
@@ -15,4 +19,7 @@ kgInput.addEventListener('input', event =>{
     poundOutput.innerHTML =`${(kg*2.2046).toFixed(2)} lb `;   //pounds  
     ounceOutput.innerHTML =`${(kg*35.274).toFixed(2)} oz `;  //ounces
 
+})
+nightToggle.addEventListener('click', event => {
+    body.classList.toggle('bg');
 })

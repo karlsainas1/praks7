@@ -1,0 +1,48 @@
+
+body{
+    font-family: verdana;
+    background-color:beige;
+    display:flex;
+    justify-content: center;
+}
+
+.kalkulaator h1 {
+    text-align: center;
+    
+}
+.kalkulaator{
+    width:300px;
+    text-align: center; 
+    
+    
+    background-color:azure;
+    margin-top: 100px;  
+    
+    
+    flex-direction: column;
+  }
+input{
+
+    text-align: center;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+}
+
+table{
+    
+    margin: 50px;
+}
+tr{
+     margin-top: 25px;
+}
+table tr td {
+      margin-top: 20px;
+    text-align: left;
+    width:100px;
+
+}
+
+.bg{
+    
+    background-color: dimgray;
+}
