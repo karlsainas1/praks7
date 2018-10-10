@@ -8,17 +8,11 @@ let output = document.getElementById('output')
 output.style.visibility= 'hidden';
 kgInput.addEventListener('input', event =>{
      let kg = event.target.value;   
-    
-    if (kg == 0 ) {
-         output.style.visibility= 'hidden';
-    }else {
-        output.style.visibility= 'visible';
-        
-    }
-          
+
+    output.style.visibility = (kg === '0') ? 'hidden' : 'visible' ;
    
-    gramOutput.innerHTML =`${kg*1000} g`;           //grams
-    poundOutput.innerHTML =`${kg*2.2046} lb `;   //pounds  
-    ounceOutput.innerHTML =`${kg*35.274} oz `;  //ounces
+    gramOutput.innerHTML  =`${kg*1000} g`;           //grams
+    poundOutput.innerHTML =`${(kg*2.2046).toFixed(2)} lb `;   //pounds  
+    ounceOutput.innerHTML =`${(kg*35.274).toFixed(2)} oz `;  //ounces
 
 })
